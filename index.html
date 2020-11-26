@@ -1,0 +1,54 @@
+<!--  
+   Eunjoo Na, 000811369
+   Date: 2020.11.15
+   Description: index.html is the main page for Rock, Paper, Scissors game web application. 
+--> 
+
+<html>
+
+<head>
+    <title>Rock, Paper, Scissors!</title>
+    <script src="js/rockpapercissors.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- div for the main page --> 
+    <div id="container" class="container">
+        <h1 id='message' class='heading'>Rock, Paper, Scissors!</h1>
+        <!-- form to store user's information --> 
+        <form id="player_form">
+            <label for="userid">User Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required autofocus>
+            <label for="age">Age:</label>
+            <input type="number" placeholder="Enter your age" id="age" min="1"  required>
+            <label for="color">Favorite Color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#FF00FF" required>
+            <input type="submit">
+        </form>
+    </div>
+    <!-- div for the game page --> 
+    <div id="game" class="disappeared">
+
+        <div id="player">
+        </div>
+        <div id="record">
+        </div>
+        <div id="help" class="help">
+            Help
+        </div>
+        <div id="frontPage">
+           <a href="index.html">Go to Main</a>
+        </div>
+        <div id="images">
+            <img id="rock" src="./rock_small.jpg" alt="rock">
+            <img id="paper" src="./paper_small.jpg" alt="paper">
+            <img id="scissors" src="./scissors_small.jpg" alt="scissors">
+        </div>
+        <div id="result"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
